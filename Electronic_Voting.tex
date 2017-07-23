@@ -18,6 +18,12 @@ Arguably the most important change in society in the past few decades has been t
 
 The most common form of electronic voting today is the Direct Recording Electronic voting machine, or DRE. These are specialized computers with either a touchscreen or button interface that run a program that displays a ballot. The votes are counted by software on the machine and the results are stored on a memory card and printed on paper. In the 2012 U.S. presidential election, 39 percent of votes were cast with a DRE machine. \cite{kalb2015guide} It is imperative that a machine that has become such an integral part of our democracy be as secure as possible. Unfortunately, numerous studies have shown that DREs are frighteningly vulnerable to hacking and tampering.
 
+A fundamental flaw with DREs is their verifiability. It is quite easy for any voter to understand how paper ballots work. This simplicity and transparency is incredibly important for voters to trust in the election. A DRE voting machine introduces a sea of black boxes that the average voter may not be able to comprehend. The electorate cannot be expected to trust that the manufacturers of DREs have made secure devices. Of course the software could be made open source, but what percentage of people would be able to read and understand the source code, and would take the time to do so? Furthermore, even releasing the source code and using a checksum to verify that that code is running on the actual machine does not necessarily prevent tampering with the hardware. It may be possible that the touchscreen itself could send incorrect touch coordinates to the program.
+
+Another requirement of an election is auditability. An election must be auditable so the results can be verified through a recount, but how can a recount be done if the votes are cast by pressing a screen? One common solution goes back to the reliability of paper. A Voter Verified Paper Audit Trail, or VVPAT, consists
+
+%Finally list actual examples of DREs being hacked.
+
 \newpage
 \printbibliography
 
