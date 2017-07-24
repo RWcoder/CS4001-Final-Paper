@@ -2,11 +2,14 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{microtype}
-\usepackage{setspace}
+%\usepackage{setspace}
+\usepackage{times}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{sources.bib}
 
-\doublespacing
+%\doublespacing
+
+\linespread{2.0}
 
 \begin{document}
 
@@ -28,10 +31,7 @@ The wide variety of these attacks attests to the increased complexity of an elec
 
 Another requirement of an election is auditability. An election must be auditable so the results can be verified through a recount. This raises even more problems for DREs. How can a recount be done if the votes are cast by pressing a screen? One common solution goes back to the reliability of paper. A Voter Verified Paper Audit Trail, or VVPAT, consists of a secondary machine connected to the DRE. When a vote is cast, it is recorded electronically and send to the VVPAT machine, which prints the vote on a slip of paper behind a window. With this added step, even if the voter does not trust the internals of the machine, they can see their vote printed out and stored. The main idea is that if there is any doubt in the results stored in the computer's memory, the VVPAT machine can be unlocked and the collected paper slips can be counted. While this approach improves the security of DRE voting machines, it has some flaws. Even though the printer is a simpler device, it is ultimately susceptible to the same black box problems as the DRE to which it is connected. One plausible attack relies on the fact that many voters do not even look at the paper slip due to poor interface design. A combination of awkward location, different visual layout from the screen, and inadequate instructions means that many voters do not truly verify their vote, or lack the patience to bring up potential mistakes. \cite{selker2004security} The printer could simply be made to print out incorrect ballots and simply rely on the hope that not enough people will contest what is printed and demand a reprint. Research suggests that approximately one third of incorrect receipts would be noticed by the voter. \cite{selker2004security} Besides relying on human factors, attackers could simply have the VVPAT machine print out extra ballots while the booth is unoccupied to match up with numbers from malicious software on the DRE itself.
 
-Assuming VVPAT can provide an accurate paper representation of the votes cast, can these receipts be reliably audited?
-%VVPAT hard to actual do the recount
-%VVPAT same problems with verifiability 
-%VVPAT can't stop a denial of service attack
+Assuming VVPAT can provide an accurate paper representation of the votes cast, can these receipts be reliably audited
 
 \newpage
 \printbibliography
